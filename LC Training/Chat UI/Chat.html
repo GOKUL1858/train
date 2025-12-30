@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat UI</title>
+    <style>
+        .chat-box {
+            width: 300px;
+            background: white;
+            margin: 50px auto;
+        }
+
+        .chat-header {
+            background: #2563eb;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .chat-messages {
+            height: 250px;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .msg {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            width: fit-content;
+            max-width: 80%;
+        }
+
+        .received {
+            background: #e5e7eb;
+        }
+
+        .sent {
+            background: #2563eb;
+            border-radius: 15px;
+            color: white;
+            margin-left: auto;
+        }
+
+        .chat-input {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .chat-input button {
+            padding: 10px;
+            background: #2563eb;
+            border-radius: 20px;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-box">
+    <div class="chat-header">Chat</div>
+
+    <div class="chat-messages">
+        <div class="msg received">Hello!</div>
+        <div class="msg sent">Hi 👋</div>
+        <div class="msg received">How are you?</div>
+        <div class="msg sent">I'am Fine 😊</div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" placeholder="Type a message">
+        <button>Send</button>
+    </div>
+</div>
+
+</body>
+</html>
